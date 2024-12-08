@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+uvicorn = "*"
+fastapi = "*"
+numpy = "*"
+names = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+start = "uvicorn main:app --reload --port 8080 --host localhost"
